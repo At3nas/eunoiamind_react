@@ -1,0 +1,41 @@
+@use '../abstracts/variables';
+
+// Contenedor del navbar
+.navbar {
+    background-color: variables.$color1;
+    font-size: variables.$f-size-md;
+
+    // Logo del navbar
+    &__logo {
+        height: 80px;
+        margin-left: 30px;
+    }
+
+    // Ul (contenedor de items de navbar / li)
+    &-nav {
+        justify-content: center;
+        gap: 2em;
+        margin-left: 2em;
+    }
+}
+
+// Elementos individuales del navbar
+.nav-item {
+    text-align: center;
+
+    // Links del navbar
+    .nav-link {
+        color: variables.$color3;
+        width: 160px;
+    }
+
+    // Elemento seleccionado
+    a.nav-link.active,
+    &:hover {
+        color: variables.$color3;
+        background-color: variables.$color2;
+        border-radius: 40px;
+        width: 160px;
+    }
+
+}

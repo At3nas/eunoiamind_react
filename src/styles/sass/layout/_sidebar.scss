@@ -1,0 +1,55 @@
+@use '../abstracts/variables';
+
+.nav {
+    &--sidebar {
+        padding: 10px;
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+        position: fixed;
+        background-color: variables.$color1;
+
+    }
+
+    &__avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        margin-top: 30px;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+
+ul.nav__items {
+    list-style: none;
+    margin-left: 15px;
+
+    .nav__item {
+        margin-bottom: 3em;
+        text-align: left;
+        
+        &__link {
+            text-decoration: none;
+            color: variables.$color3;
+            font-size: variables.$f-size-sm;
+
+            &:hover {
+                background-color: variables.$color2;
+                border-radius: 40px;
+                width: 160px;
+            }
+
+        }
+
+        &__icon {
+            height: 35px;
+            width: 35px;
+            stroke: variables.$color3;
+            margin-right: 20px;
+        }
+    }
+}

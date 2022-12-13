@@ -1,0 +1,209 @@
+@use '../abstracts/variables';
+
+/* ---------- Selectores ---------- */
+// Selector universal
+* {
+    font-family: variables.$font1;
+    // border: 1px solid black;
+}
+
+// Selector del body y div padre
+body {
+    div.container-fluid {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+/* --------------------------------------------- */
+
+/* ---------- Headings ---------- */
+h1 {
+    display: none;
+}
+
+/* ------------------------------- */
+
+
+// Contenedor flex de la planta colgante
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+
+    // Imagen de la planta colgante
+    .img__hangingPlant {
+        position: absolute;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+/* ---------- Header ---------- */
+
+// Contenedor padre del header
+.header {
+    margin-top: 20px;
+    margin-left: 80px;
+
+    // Contenedor del logo
+    &__div__logo {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    // Contenedor del eslogan y la descripción
+    &__div__texts {
+        display: inline-block;
+        width: 800px;
+        vertical-align: middle;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    // Eslogan
+    &__eslogan {
+        font-size: variables.$f-size-lg;
+        color: variables.$color3;
+        width: 470px;
+    }
+
+    // Descripción
+    &__desc {
+        font-size: variables.$f-size-sm;
+        color: variables.$color4;
+        width: 700px;
+    }
+
+    // Contenedor de botones
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+    }
+}
+
+// Clase de cada botón
+.btn.header__btn {
+    background-color: variables.$color1;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    color: variables.$color3;
+    font-size: variables.$f-size-sm;
+
+    &:hover {
+        background-color: variables.$color2;
+        color: variables.$color3;
+    }
+}
+
+/* --------------------------------------------- */
+
+/* ---------- Section ---------- */
+.section {
+    padding: 4em;
+    margin-top: 5em;
+
+    &__h2 {
+        color: variables.$color3;
+        font-size: variables.$f-size-lg;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+
+        &__img {
+            height: 400px;
+        }
+
+        /* ---------- Cards | Producto ---------- */
+        &__cards {
+            display: flex;
+
+            .card {
+                display: inline-block;
+                margin-right: 2em;
+                border-color: variables.$color3;
+                border-width: 2px;
+
+                &-title {
+                    color: variables.$color3;
+                }
+
+                &-text {
+                    color: variables.$color4;
+                }
+
+            }
+        }
+
+    }
+
+    &__p {
+        font-size: variables.$f-size-sm;
+        color: variables.$color4;
+    }
+
+    /* ---------- Contacto ---------- */
+    &--form {
+        display:flex;
+    }
+
+    &__form {
+        justify-content: center;
+        vertical-align: middle;
+        background-color: variables.$color1;
+        border-radius: 40px;
+        padding: 3em;
+        width: 70%;
+
+        label {
+            color: variables.$color3;
+            font-size: variables.$f-size-sm;
+        }
+
+        input {
+            background-color: variables.$color2;
+            border-radius: 15px;
+            border: none;
+            color: variables.$color4;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        &__fullname {
+            display: flex;
+
+            &__f-name {
+                margin-bottom: 2em;
+                display: inline-block;
+                justify-content: start;
+            }
+
+            &__l-name {
+                margin-bottom: 2em;
+                display: inline-block;
+                justify-content: end;
+            }
+        }
+
+        &__email {
+            display: block;
+
+            input {
+                width: 440px;
+            }
+        }
+
+        &__texto {
+            display: block;
+        }
+
+    }
+}
