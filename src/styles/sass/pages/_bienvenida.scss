@@ -1,0 +1,42 @@
+@use '../abstracts/variables';
+
+//cambiar variable en especifico
+h1.titulo-bienvenida{
+    color:variables.$color3;
+    font-family:variables.$font1;
+    font-size:variables.$f-size-lg;
+    justify-content: center;
+
+}
+
+//clase de los div
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+h2.subtitulo{
+    color:variables.$color4;
+    font-family:variables.$font1;
+    font-size:variables.$f-size-md;
+    justify-content: center;
+}
+
+.btn1{
+    background-color:variables.$color1;
+    font-family:variables.$font1;
+    border: none;
+    padding: 6px 20px;
+    color:variables.$color3;
+    font-size: variables.$f-size-sm;
+    border-radius: 40px;
+}
+
+#fondo{
+    background-color:variables.$color2;
+}
+
+.logo{
+    width: 350px; 
+}
