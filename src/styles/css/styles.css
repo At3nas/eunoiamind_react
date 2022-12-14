@@ -10,10 +10,6 @@ body div.container-fluid {
 
 /* --------------------------------------------- */
 /* ---------- Headings ---------- */
-h1 {
-  display: none;
-}
-
 /* ------------------------------- */
 .flex-container {
   display: flex;
@@ -164,6 +160,48 @@ h1 {
 
 .main__page-content {
   margin-left: 20%;
+}
+
+h1.titulo-bienvenida {
+  color: #6CB18C;
+  font-family: "Neucha";
+  font-size: 48px;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+h2.subtitulo {
+  color: #B17B6C;
+  font-family: "Neucha";
+  font-size: 30px;
+  justify-content: center;
+}
+
+.btn1 {
+  background-color: #E6FDD3;
+  font-family: "Neucha";
+  border: none;
+  padding: 6px 20px;
+  color: #6CB18C;
+  font-size: 25px;
+  border-radius: 40px;
+}
+
+#fondo {
+  background-color: #C8EAC1;
+}
+
+.logo {
+  width: 350px;
+}
+
+.fondopregunta {
+  background-color: #C8EAC1;
 }
 
 .nav--sidebar {
