@@ -45,7 +45,7 @@ function App() {
           <br />
           <div className="section__div__cards">
             <div className="card">
-              <img src="/src/assets/placeholder2.png" className="card-img-top" alt="..." />
+              <img src={require("./assets/placeholder1.png")} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h3 className="card-title">Diseño bonito y simple</h3>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk
@@ -55,7 +55,7 @@ function App() {
             </div>
 
             <div className="card">
-              <img src="/src/assets/placeholder2.png" className="card-img-top" alt="..." />
+              <img src={require("./assets/placeholder2.png")} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h3 className="card-title">Registra tus emociones</h3>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk
@@ -65,7 +65,7 @@ function App() {
             </div>
 
             <div className="card">
-              <img src="/src/assets/placeholder2.png" className="card-img-top" alt="..." />
+              <img src={require("./assets/placeholder2.png")} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h3 className="card-title">Lorem Ipsum</h3>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk
