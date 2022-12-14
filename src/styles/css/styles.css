@@ -20,6 +20,7 @@ h1 {
   justify-content: flex-end;
 }
 .flex-container .img__hangingPlant {
+  width: 230px;
   position: absolute;
   margin-right: 40px;
 }
@@ -37,6 +38,9 @@ h1 {
 .header__div__logo {
   display: inline-block;
   margin-right: 40px;
+}
+.header__div__logo .header__logo {
+  width: 300px;
 }
 .header__div__texts {
   display: inline-block;

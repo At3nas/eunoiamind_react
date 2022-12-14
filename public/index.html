@@ -15,132 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/src/assets/logo-manchita.svg">
+    <!-- Manifest JSON -->
+    <link rel="manifest" href="/public/manifest.json" />
 </head>
 
 <body>
-    <!-- Inicio del container padre -->
-    <div class="container-fluid">
-        <!-- Navbar -->
-        <div class="flex-container">
-            <img src="/src/assets/plant-hanging1.svg" class="img__hangingPlant hidden-mobile">
-        </div>
-        <!-- Título (oculto) -->
-        <br>
-        <h1>EunoiaMind</h1>
-        <br>
-        <!-- Header -->
-        <header class="header">
-            <div class="header__div__logo">
-                <a><img src="/src/assets/logo-circulo.svg" class="header__logo" alt="Logo de la app"></a>
-            </div>
-
-            <div class="header__div__texts">
-                <p class="header__eslogan">
-                    Conoce tu mente,
-                    identifica tus emociones
-                </p>
-                <p class="header__desc">Una aplicación web que te permite registrar, visualizar y comprender la forma
-                    en la que te sientes</p>
-            </div>
-
-            <div class="header__buttons">
-                <a href="register.html"><button type="button" class="btn header__btn">Registrarse</button></a>
-                <a href="login.html"><button type="button" class="btn header__btn">Iniciar sesión</button></a>
-            </div>
-        </header>
-
-        <!-- Producto -->
-        <section class="section" id="producto">
-            <h2 class="section__h2">Producto</h2>
-            <p class="section__p">Lee más acerca de las características y funciones de EunoiaMind</p>
-            <br>
-            <div class="section__div__cards">
-                <div class="card">
-                    <img src="/src/assets/placeholder2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Diseño bonito y simple</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/src/assets/placeholder2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Registra tus emociones</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the card's content.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/src/assets/placeholder2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Lorem Ipsum</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Nosotros -->
-        <section class="section" id="nosotros">
-            <h2 class="section__h2">Nosotros</h2>
-            <p class="section__p">Conoce qué nos motivo a desarrollar esta aplicación</p>
-            <br>
-        </section>
-
-        <!-- Contacto -->
-        <section class="section" id="contacto">
-            <h2 class="section__h2">Contacto</h2>
-            <p class="section__p">¿Tienes alguna duda, sugerencia o problema? ¡Contáctanos!</p>
-
-            <div class="section__div">
-                <form class="section__form">
-                    <div class="section__form__fullname">
-                        <div class="section__form__fullname__f-name">
-                            <label for="f-name">Nombre:</label>
-                            <input type="text" id="f-name" name="f-name">
-                        </div>
-                        <div class="section__form__fullname__l-name">
-                            <label for="l-name">Apellido:</label>
-                            <input type="text" id="l-name" name="l-name">
-                        </div>
-                    </div>
-
-                    <div class="section__form__email">
-                        <label for="email">Correo electrónico:</label>
-                        <br>
-                        <input type="email" id="email">
-                    </div>
-
-                    <div class="section__form__motivo">
-                        <label>Motivo:</label>
-                        <select>
-                            <option>Consultas</option>
-                            <option>Sugerencias</option>
-                            <option>Problemas</option>
-                        </select>
-                    </div>
-
-
-                    <div class="section__form__texto">
-                        <label for="textolibre">Escriba lo que quiera comunicarnos:</label>
-                        <br>
-                        <textarea id="textolibre" rows="3"></textarea>
-                    </div>
-
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-
-        </footer>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        
     </div>
     <!-- Fin del container padre -->
 

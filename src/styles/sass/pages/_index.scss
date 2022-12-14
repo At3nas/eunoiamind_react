@@ -32,6 +32,7 @@ h1 {
 
     // Imagen de la planta colgante
     .img__hangingPlant {
+        width: 230px;
         position: absolute;
         margin-right: 40px;
     }
@@ -54,6 +55,10 @@ h1 {
     &__div__logo {
         display: inline-block;
         margin-right: 40px;
+
+        .header__logo {
+            width: 300px;
+        }
     }
 
     // Contenedor del eslogan y la descripción
