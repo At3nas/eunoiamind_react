@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class Navbar_index extends Component {
+class NavbarIndex extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <img src={require("../src/assets/logo-manchita.svg")} className="navbar__logo" alt="Logo de la aplicación" />
+                <img src={require("../assets/logo-manchita.png")} className="navbar__logo" alt="Logo de la aplicación" />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -14,7 +14,7 @@ class Navbar_index extends Component {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a className="nav-link active" aria-current="page" href="/public/index.html">Inicio</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#producto">Producto</a>
@@ -33,4 +33,4 @@ class Navbar_index extends Component {
     }
 }
 
-export default Navbar_index;
+export default NavbarIndex;

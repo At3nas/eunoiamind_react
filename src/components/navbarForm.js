@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Navbar_form extends Component {
+class NavbarForm extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg">
@@ -31,4 +31,4 @@ class Navbar_form extends Component {
     }
 }
 
-export default Navbar_form;
+export default NavbarForm;
