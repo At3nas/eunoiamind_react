@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../sliders.js';
 
 class SliderIndex extends Component {
     render() {
@@ -39,14 +38,7 @@ class SliderIndex extends Component {
                         <figure className="slider__picture">
                             <img src={require("../assets/atenas.jfif")} className="slider__img" alt="Foto de Atenas Pérez" />
                         </figure>
-                        <div>
-                            <a href="https://www.linkedin.com/in/jonathan-avilez-229137258/img src="><img
-                                src={require("../assets/linkedin-icon.png")} alt="linkedin" className="linkedin" /></a>
-                            <a href="https://github.com/joonaAaa"><img src={require("../assets/github-icon.png")}
-                                alt="github-logo" className="github" /></a>
-                        </div>
                     </section>
-
 
                     <section className="slider__body" data-id="3">
                         <div className="slider__texts">
@@ -60,14 +52,7 @@ class SliderIndex extends Component {
                         <figure className="slider__picture">
                             <img src={require("../assets/camilo.jpeg")} className="slider__img" alt="Foto de Camilo Rivera" />
                         </figure>
-                        <div>
-                            <a href="https://www.linkedin.com/in/jonathan-avilez-229137258/img src="><img
-                                src={require("../assets/linkedin-icon.png")} alt="linkedin" className="linkedin" /></a>
-                            <a href="https://github.com/joonaAaa"><img src={require("../assets/github-icon.png")}
-                                alt="github-logo" className="github" /></a>
-                        </div>
                     </section>
-
 
                     <section className="slider__body" data-id="4">
                         <div className="slider__texts">
@@ -81,12 +66,6 @@ class SliderIndex extends Component {
                         <figure className="slider__picture">
                             <img src={require("../assets/luisa.jfif")} className="slider__img" alt="Foto de Luisa Morales" />
                         </figure>
-                        <div>
-                            <a href="https://www.linkedin.com/in/jonathan-avilez-229137258/img src="><img
-                                src={require("../assets/linkedin-icon.png")} alt="linkedin" className="linkedin" /></a>
-                            <a href="https://github.com/joonaAaa"><img src={require("../assets/github-icon.png")}
-                                alt="github-logo" className="github" /></a>
-                        </div>
                     </section>
                     <img src={require("../assets/arrow-right.png")} className="slider__arrow" id="next" alt="" />
                 </div>
