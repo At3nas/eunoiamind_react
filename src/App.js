@@ -82,8 +82,9 @@ function App() {
           <h2 className="section__h2">Nosotros</h2>
           <p className="section__p">Conoce qué nos motivo a desarrollar esta aplicación</p>
           <br />
-          
+          <SliderIndex />
         </section>
+
 
         {/* <!-- Contacto --> */}
         <section className="section" id="contacto">
