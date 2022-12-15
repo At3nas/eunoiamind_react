@@ -10,11 +10,11 @@ function App() {
         {/* <!-- Navbar --> */}
         <NavbarIndex />
         <div className="flex-container">
-          <img src={require("./assets/plant-hanging1.png")} className="img__hangingPlant hidden-mobile" alt="Ilustración decorativa de una planta colgante"/>
+          <img src={require("./assets/plant-hanging1.png")} className="img__hangingPlant hidden-mobile" alt="Ilustración decorativa de una planta colgante" />
         </div>
         {/* <!-- Título (oculto) --> */}
         <br />
-        <h1>EunoiaMind</h1>
+        <h1 id="h1-index">EunoiaMind</h1>
         <br />
         {/* <!-- Header --> */}
         <header className="header">
@@ -89,12 +89,13 @@ function App() {
           <p className="section__p">¿Tienes alguna duda, sugerencia o problema? ¡Contáctanos!</p>
 
           <div className="section__div">
-            <form className="section__form">
+            <form className="section__form center-element">
               <div className="section__form__fullname">
                 <div className="section__form__fullname__f-name">
                   <label for="f-name">Nombre:</label>
                   <input type="text" id="f-name" name="f-name" />
                 </div>
+                
                 <div className="section__form__fullname__l-name">
                   <label for="l-name">Apellido:</label>
                   <input type="text" id="l-name" name="l-name" />
@@ -109,7 +110,7 @@ function App() {
 
               <div className="section__form__motivo">
                 <label>Motivo:</label>
-                <select>
+                <select class="form-select">
                   <option>Consultas</option>
                   <option>Sugerencias</option>
                   <option>Problemas</option>
@@ -117,12 +118,12 @@ function App() {
               </div>
 
 
-              <div className="section__form__texto">
+              <div class="section__form__texto">
                 <label for="textolibre">Escriba lo que quiera comunicarnos:</label>
                 <br />
-                <textarea id="textolibre" rows="3"></textarea>
+                <textarea id="textolibre" rows="5"></textarea>
               </div>
-
+              <button type="submit" class="btn-form">Enviar</button>
             </form>
           </div>
         </section>
