@@ -1,4 +1,5 @@
 import NavbarIndex from './components/navbarIndex';
+import SliderIndex from './components/sliderIndex';
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
 
@@ -81,8 +82,9 @@ function App() {
           <h2 className="section__h2">Nosotros</h2>
           <p className="section__p">Conoce qué nos motivo a desarrollar esta aplicación</p>
           <br />
-          
+          <SliderIndex />
         </section>
+
 
         {/* <!-- Contacto --> */}
         <section className="section" id="contacto">
@@ -121,7 +123,7 @@ function App() {
                 <br />
                 <textarea id="textolibre" rows="3"></textarea>
               </div>
-
+              <button type="submit" class="btn-form">Enviar</button>
             </form>
           </div>
         </section>
