@@ -1,4 +1,5 @@
 import NavbarIndex from './components/navbarIndex';
+import SliderIndex from './components/sliderIndex';
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
 
@@ -121,7 +122,7 @@ function App() {
                 <br />
                 <textarea id="textolibre" rows="3"></textarea>
               </div>
-
+              <button type="submit" class="btn-form">Enviar</button>
             </form>
           </div>
         </section>
