@@ -1,6 +1,16 @@
 @use '../abstracts/variables';
 
-.fondopregunta{
-    background-color: variables.$color2;
+#fondo{
+    background-color: variables.$color2;;
+}
+
+.titulo{
+    font-family: variables.$font1;
+    color: variables.$color3;
+}
+
+.pregunta{
+    display: flex;
+    justify-content: center;
 }
 
