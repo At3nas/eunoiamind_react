@@ -81,6 +81,7 @@ function App() {
           <h2 className="section__h2">Nosotros</h2>
           <p className="section__p">Conoce qué nos motivo a desarrollar esta aplicación</p>
           <br />
+          
         </section>
 
         {/* <!-- Contacto --> */}
@@ -95,7 +96,6 @@ function App() {
                   <label for="f-name">Nombre:</label>
                   <input type="text" id="f-name" name="f-name" />
                 </div>
-                
                 <div className="section__form__fullname__l-name">
                   <label for="l-name">Apellido:</label>
                   <input type="text" id="l-name" name="l-name" />
@@ -116,14 +116,12 @@ function App() {
                   <option>Problemas</option>
                 </select>
               </div>
-
-
-              <div class="section__form__texto">
+              <div className="section__form__texto">
                 <label for="textolibre">Escriba lo que quiera comunicarnos:</label>
                 <br />
-                <textarea id="textolibre" rows="5"></textarea>
+                <textarea id="textolibre" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn-form">Enviar</button>
+
             </form>
           </div>
         </section>
