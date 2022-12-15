@@ -200,8 +200,18 @@ h2.subtitulo {
   width: 350px;
 }
 
-.fondopregunta {
+#fondo {
   background-color: #C8EAC1;
+}
+
+.titulo {
+  font-family: "Neucha";
+  color: #6CB18C;
+}
+
+.pregunta {
+  display: flex;
+  justify-content: center;
 }
 
 .nav--sidebar {
