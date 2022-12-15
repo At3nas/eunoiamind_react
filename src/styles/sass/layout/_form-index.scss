@@ -1,0 +1,96 @@
+@use '../abstracts/variables';
+
+.section {
+
+    /* ---------- Contacto ---------- */
+    &__form {
+        margin-top: 2em;
+        background-color: variables.$color1;
+        border-radius: 40px;
+        padding: 3em;
+
+        label {
+            color: rgb(39, 64, 39);
+            font-size: variables.$f-size-sm;
+        }
+
+        input {
+            background-color: variables.$color2;
+            border-radius: 15px;
+            border: none;
+            color: variables.$color3;
+            padding-left: 15px;
+            font-size: 22px;
+        }
+
+        &__fullname {
+            display: flex;
+
+            &__f-name {
+                display: inline-block;
+                justify-content: start;
+            }
+
+            &__l-name {
+                display: inline-block;
+                justify-content: end;
+            }
+
+            input {
+                width: 55%;
+                margin-left: 10px;
+            }
+        }
+
+        &__email {
+            display: block;
+            margin-bottom: 2em;
+
+            input {
+                width: 95%;
+            }
+        }
+
+        &__motivo {
+            margin-bottom: 2em;
+        }
+
+        &__texto {
+            display: block;
+        }
+
+    }
+
+    .form-select {
+        background-color: variables.$color2;
+        color: rgb(39, 64, 39);
+        font-size: 20px;
+        width: 95%;
+    }
+
+    #textolibre {
+        border: none;
+        background-color: variables.$color2;
+        color: rgb(39, 64, 39);
+        font-size: 20px;
+        resize: none;
+        width: 95%;
+        margin-bottom: 2em;
+    }
+
+    .btn-form {
+        background-color: variables.$color3;
+        color: variables.$color1;
+        font-size: variables.$f-size-sm;
+        width: 160px;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+        margin-left: 30%;
+
+        &:hover {
+            background-color: variables.$color2;
+            color: variables.$color3;
+        }
+    }
+}
