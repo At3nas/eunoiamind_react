@@ -162,8 +162,49 @@ h1#h1-index {
   display: block;
 }
 
-.main__page-content {
+/* * {
+    border: 1px solid black;
+} */
+.div__calendar {
   margin-left: 20%;
+}
+.div__calendar__container h2.month__title {
+  color: #B17B6C;
+}
+.div__calendar__container__month {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 2em 0;
+}
+.div__calendar__container__month img.calendar__arrow {
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+}
+.div__calendar__container__week {
+  display: flex;
+  justify-content: center;
+}
+.div__calendar__container__week ul.calendar__ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 80%;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+  color: #6CB18C;
+}
+.div__calendar__container__week .first-day {
+  grid-column-start: 4;
+}
+.div__calendar__container__week .week-day {
+  color: #B17B6C;
+  font-size: 25px;
+}
+.div__calendar__container__week .month-day {
+  margin: 40px;
 }
 
 h1.titulo-bienvenida {

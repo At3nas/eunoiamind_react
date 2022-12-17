@@ -1,5 +1,58 @@
 @use '../abstracts/variables';
 
-.main__page-content {
+/* * {
+    border: 1px solid black;
+} */
+
+.div__calendar {
     margin-left: 20%;
+
+    &__container {
+        h2.month__title {
+            color: variables.$color4;
+        }
+        &__month {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin: 2em 0;
+
+            img.calendar__arrow {
+                width: 35px;
+                height: 35px;
+                margin: 0 20px;
+            }
+        }
+
+        &__week {
+            display: flex;
+            justify-content: center;
+
+            ul.calendar__ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                width: 80%;
+                padding: 0px;
+                text-align: center;
+                font-size: 20px;
+                color: variables.$color3;
+            }
+
+            .first-day {
+                grid-column-start: 4;
+            }
+
+            .week-day {
+                color: variables.$color4;
+                font-size: 25px;
+            }
+
+            .month-day {
+                margin: 40px;
+            }
+
+        }
+
+    }
 }
