@@ -3,6 +3,12 @@
 @use 'pages/calendar';
 @use 'pages/bienvenida';
 @use 'pages/pregunta';
+@use 'pages/configuracion';
 
 @use 'layout/sidebar';
 @use 'layout/navbar';
+@use 'layout/scrollbar';
+@use 'layout/slider';
+@use 'layout/form-index';
+
+@use 'abstracts/class';

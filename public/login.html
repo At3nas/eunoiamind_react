@@ -19,9 +19,47 @@
 
 <body>
     <div class="container-fluid">
-
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html"><img src="/src/assets/logo-manchita.svg" class="navbar__logo"
+                        alt="Logo de la aplicación"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html" aria-current="page">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="login.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="contenedor">
+            <form class="form_registro" action="" method="">
+                <h2>INICIA SESIÓN</h2>
+                <div class="mb-3 _input">
+                    <label for="exampleFormControlInput1" class="form-label">Correo:</label>
+                    <input type="email" class="form-control input_registro" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 _input">
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña:</label>
+                    <input type="email" class="form-control input_registro" id="exampleFormControlInput1">
+                </div>
+                <div class="div_btn">
+                    <a href="bienvenida.html" aria-current="page">Ingresar</a>
+                </div>
+            </form>
+        </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
