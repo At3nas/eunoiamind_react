@@ -19,13 +19,66 @@
 
 <body>
     <div class="container-fluid">
-        <main class="main__page-content">
-            <h1>Calendario</h1>
+        <nav class="nav nav--sidebar">
+            <img src="/src/assets/avatar_test.jpg" class="nav__avatar" alt="Avatar del usuario" />
 
-        </main>
-        
+            <ul class="nav__items">
+
+                <li class="nav__item">
+                    <a href="home.html" class="nav__item__link"><img src="/src/assets/icon-home.svg"
+                            class="nav__item__icon" alt="Icono del Home" />Home</a>
+                </li>
+
+                <li class="nav__item"><a href="calendar.html" class="nav__item__link"><img
+                            src="/src/assets/icon-calendar.svg" class="nav__item__icon"
+                            alt="Icono del Calendario" />Calendario</a></li>
+
+                <li class="nav__item"><a href="settings.html" class="nav__item__link"><img
+                            src="/src/assets/icon-settings.svg" class="nav__item__icon"
+                            alt="Icono de Configuración" />Configuración</a></li>
+
+
+                <li class="nav__item"><a href="index.html" class="nav__item__link"><img
+                            src="/src/assets/icon-logout.svg" class="nav__item__icon"
+                            alt="Icono de Cerrar sesión" />Cerrar sesión</a></li>
+            </ul>
+
+        </nav>
+        <div class="div__calendar">
+            <br>
+            <h1 class="page__title center-element">Calendario</h1>
+
+            <div class="div__calendar__container">
+                <div class="div__calendar__container__year">
+                    <h2 class="year__title" id="year"></h2>
+                </div>
+
+                <div class="div__calendar__container__month">
+                    <img src="/src/assets/arrow-left.png" class="calendar__arrow" id="calendar-prev">
+                    <h3 class="month__title" id="month"></h3>
+                    <img src="/src/assets/arrow-right.png" class="calendar__arrow" id="calendar-next">
+                </div>
+
+                <div class="div__calendar__container__weeks">
+                    <div class="calendar__week center-element">
+                        <p class="week-day">Lun</p>
+                        <p class="week-day">Mar</p>
+                        <p class="week-day">Mié</p>
+                        <p class="week-day">Jue</p>
+                        <p class="week-day">Vie</p>
+                        <p class="week-day">Sáb</p>
+                        <p class="week-day">Dom</p>
+                    </div>
+
+                    <div class="calendar__dates center-element" id="dates">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="../src/calendar.js"></script>
     <!-- Bootstrap (NO ELIMINAR) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

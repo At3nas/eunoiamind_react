@@ -5,7 +5,7 @@ class SliderIndex extends Component {
         return (
             <section className="slider slider-total">
                 <div className="slider__container container">
-                    <img src={require("../assets/arrow.svg")} className="slider__arrow" id="before" alt="" />
+                    <img src={require("../assets/chevron-left-regular-24.png")} className="slider__arrow" id="before" alt="" />
                     <section className="slider__body slider__body--show" data-id="1">
                         <div className="slider__texts">
                             <h2 className="subtitle">Jonathan Avilez</h2>
@@ -70,7 +70,7 @@ class SliderIndex extends Component {
                             <img src={require("../assets/luisa.jfif")} className="slider__img" alt="Foto de Luisa Morales" />
                         </figure>
                     </section>
-                    <img src={require("../assets/arrowde.svg")} className="slider__arrow" id="next" alt="" />
+                    <img src={require("../assets/chevron-right-regular-24.png")} className="slider__arrow prueba-slider" id="next" alt="" />
                 </div>
             </section>
             
