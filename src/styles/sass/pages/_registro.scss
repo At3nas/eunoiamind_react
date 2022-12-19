@@ -1,1 +1,47 @@
 @use '../abstracts/variables';
+
+.form_registro h2{
+    font-size: variables.$f-size-lg;
+    color: variables.$color3;
+    text-align: center;
+    margin: 60px;
+}
+.form_registro{
+    background-color: variables.$color1;
+    border-radius: 60px;
+    font-size: variables.$f-size-md;
+    color: variables.$color4;
+    width: 35vw;
+    padding: 20px;
+    margin: 50px 0px 140px 0px;
+}
+
+input.input_registro{
+    background-color: variables.$color2;
+    margin-bottom: 30px;
+    height: 75px;
+    border-radius: 70px;
+    font-size: variables.$f-size-sm;
+    padding: 20px;
+}
+
+div._input{
+    padding: 10px;
+    text-align: center;
+}
+
+button.btn_submit{
+    background-color:variables.$color2;
+    font-family:variables.$font1;
+    border: none;
+    padding: 6px 20px;
+    color:variables.$color3;
+    font-size: variables.$f-size-sm;
+    border-radius: 40px;
+}
+
+.div_btn{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
