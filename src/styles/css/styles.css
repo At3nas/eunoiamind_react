@@ -1,0 +1,289 @@
+/* ---------- Selectores ---------- */
+* {
+  font-family: "Neucha";
+}
+
+body div.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* --------------------------------------------- */
+/* ---------- Headings ---------- */
+/* ------------------------------- */
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-container .img__hangingPlant {
+  width: 230px;
+  position: absolute;
+  margin-right: 40px;
+}
+
+@media (max-width: 1350px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+/* ---------- Header ---------- */
+.header {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.header__div__logo {
+  display: inline-block;
+  margin-right: 40px;
+}
+.header__div__logo .header__logo {
+  width: 300px;
+}
+.header__div__texts {
+  display: inline-block;
+  width: 800px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.header__eslogan {
+  font-size: 48px;
+  color: #6CB18C;
+  width: 470px;
+}
+.header__desc {
+  font-size: 25px;
+  color: #B17B6C;
+  width: 700px;
+}
+.header__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.btn.header__btn {
+  background-color: #E6FDD3;
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  color: #6CB18C;
+  font-size: 25px;
+}
+.btn.header__btn:hover {
+  background-color: #C8EAC1;
+  color: #6CB18C;
+}
+
+/* --------------------------------------------- */
+/* ---------- Section ---------- */
+.section {
+  padding: 4em;
+  margin-top: 5em;
+  /* ---------- Contacto ---------- */
+}
+.section__h2 {
+  color: #6CB18C;
+  font-size: 48px;
+}
+.section__div {
+  display: flex;
+  justify-content: space-between;
+  /* ---------- Cards | Producto ---------- */
+}
+.section__div__img {
+  height: 400px;
+}
+.section__div__cards {
+  display: flex;
+}
+.section__div__cards .card {
+  display: inline-block;
+  margin-right: 2em;
+  border-color: #6CB18C;
+  border-width: 2px;
+}
+.section__div__cards .card-title {
+  color: #6CB18C;
+}
+.section__div__cards .card-text {
+  color: #B17B6C;
+}
+.section__p {
+  font-size: 25px;
+  color: #B17B6C;
+}
+.section--form {
+  display: flex;
+}
+.section__form {
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #E6FDD3;
+  border-radius: 40px;
+  padding: 3em;
+  width: 70%;
+}
+.section__form label {
+  color: #6CB18C;
+  font-size: 25px;
+}
+.section__form input {
+  background-color: #C8EAC1;
+  border-radius: 15px;
+  border: none;
+  color: #B17B6C;
+  text-align: center;
+  font-size: 22px;
+}
+.section__form__fullname {
+  display: flex;
+}
+.section__form__fullname__f-name {
+  margin-bottom: 2em;
+  display: inline-block;
+  justify-content: start;
+}
+.section__form__fullname__l-name {
+  margin-bottom: 2em;
+  display: inline-block;
+  justify-content: end;
+}
+.section__form__email {
+  display: block;
+}
+.section__form__email input {
+  width: 440px;
+}
+.section__form__texto {
+  display: block;
+}
+
+.main__page-content {
+  margin-left: 20%;
+}
+
+h1.titulo-bienvenida {
+  color: #6CB18C;
+  font-family: "Neucha";
+  font-size: 48px;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+h2.subtitulo {
+  color: #B17B6C;
+  font-family: "Neucha";
+  font-size: 30px;
+  justify-content: center;
+}
+
+.btn1 {
+  background-color: #E6FDD3;
+  font-family: "Neucha";
+  border: none;
+  padding: 6px 20px;
+  color: #6CB18C;
+  font-size: 25px;
+  border-radius: 40px;
+}
+
+#fondo {
+  background-color: #C8EAC1;
+}
+
+.logo {
+  width: 350px;
+}
+
+#fondo {
+  background-color: #C8EAC1;
+}
+
+.titulo {
+  font-family: "Neucha";
+  color: #6CB18C;
+}
+
+.pregunta {
+  display: flex;
+  justify-content: center;
+}
+
+.nav--sidebar {
+  padding: 10px;
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: fixed;
+  background-color: #E6FDD3;
+}
+.nav__avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin-top: 30px;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul.nav__items {
+  list-style: none;
+  margin-left: 15px;
+}
+ul.nav__items .nav__item {
+  margin-bottom: 3em;
+  text-align: left;
+}
+ul.nav__items .nav__item__link {
+  text-decoration: none;
+  color: #6CB18C;
+  font-size: 25px;
+}
+ul.nav__items .nav__item__link:hover {
+  background-color: #C8EAC1;
+  border-radius: 40px;
+  width: 160px;
+}
+ul.nav__items .nav__item__icon {
+  height: 35px;
+  width: 35px;
+  stroke: #6CB18C;
+  margin-right: 20px;
+}
+
+.navbar {
+  background-color: #E6FDD3;
+  font-size: 30px;
+}
+.navbar__logo {
+  height: 80px;
+  margin-left: 30px;
+}
+.navbar-nav {
+  justify-content: center;
+  gap: 2em;
+  margin-left: 2em;
+}
+
+.nav-item {
+  text-align: center;
+}
+.nav-item .nav-link {
+  color: #6CB18C;
+  width: 160px;
+}
+.nav-item a.nav-link.active, .nav-item:hover {
+  color: #6CB18C;
+  background-color: #C8EAC1;
+  border-radius: 40px;
+  width: 160px;
+}
+
+/*# sourceMappingURL=styles.css.map */
