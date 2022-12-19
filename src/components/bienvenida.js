@@ -9,7 +9,7 @@ class Bienvenida extends Component{
                     <h1 className="titulo-bienvenida">¡Bienvenid@ a EunoiaMind!</h1>
                 </div>
                 <div className="contenedor">
-                    <img className="logo" src="../src/assets/logo-manchita.png"alt/>
+                    <img className="logo" src="../src/assets/logo-manchita.png" alt="logo eunoia"/>
                 </div>
                 <div className="contenedor">
                     <h2 className="subtitulo">Comencemos llenando algunos datos</h2>
