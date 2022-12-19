@@ -49,64 +49,35 @@
             <h1 class="page__title center-element">Calendario</h1>
 
             <div class="div__calendar__container">
-                <div class="div__calendar__container__month">
-                    <img src="/src/assets/arrow-left.png" class="calendar__arrow">
-                    <h2 class="month__title">Diciembre</h2>
-                    <img src="/src/assets/arrow-right.png" class="calendar__arrow">                </div>
-
-                <div class="div__calendar__container__week">
-                    <ul class="calendar__ul">
-                        <li class="week-day">Lun</li>
-                        <li class="week-day">Mar</li>
-                        <li class="week-day">Mié</li>
-                        <li class="week-day">Jue</li>
-                        <li class="week-day">Vie</li>
-                        <li class="week-day">Sáb</li>
-                        <li class="week-day">Dom</li>
-
-                        <li class="month-day first-day">1</li>
-                        <li class="month-day">2</li>
-                        <li class="month-day">3</li>
-                        <li class="month-day">4</li>
-                        <li class="month-day">5</li>
-                        <li class="month-day">6</li>
-                        <li class="month-day">7</li>
-                        <li class="month-day">8</li>
-                        <li class="month-day">9</li>
-                        <li class="month-day">10</li>
-                        <li class="month-day">11</li>
-                        <li class="month-day">12</li>
-                        <li class="month-day">13</li>
-                        <li class="month-day">14</li>
-                        <li class="month-day">15</li>
-                        <li class="month-day">16</li>
-                        <li class="month-day">17</li>
-                        <li class="month-day">18</li>
-                        <li class="month-day">19</li>
-                        <li class="month-day">20</li>
-                        <li class="month-day">21</li>
-                        <li class="month-day">22</li>
-                        <li class="month-day">23</li>
-                        <li class="month-day">24</li>
-                        <li class="month-day">25</li>
-                        <li class="month-day">26</li>
-                        <li class="month-day">27</li>
-                        <li class="month-day">28</li>
-                        <li class="month-day">29</li>
-                        <li class="month-day">30</li>
-                        <li class="month-day">31</li>
-                    </ul>
-
+                <div class="div__calendar__container__year">
+                    <h2 class="year__title" id="year"></h2>
                 </div>
 
+                <div class="div__calendar__container__month">
+                    <img src="/src/assets/arrow-left.png" class="calendar__arrow" id="calendar-prev">
+                    <h3 class="month__title" id="month"></h3>
+                    <img src="/src/assets/arrow-right.png" class="calendar__arrow" id="calendar-next">
+                </div>
 
+                <div class="div__calendar__container__weeks">
+                    <div class="calendar__week center-element">
+                        <p class="week-day">Lun</p>
+                        <p class="week-day">Mar</p>
+                        <p class="week-day">Mié</p>
+                        <p class="week-day">Jue</p>
+                        <p class="week-day">Vie</p>
+                        <p class="week-day">Sáb</p>
+                        <p class="week-day">Dom</p>
+                    </div>
+
+                    <div class="calendar__dates center-element" id="dates">
+
+                    </div>
+                </div>
             </div>
-
-
         </div>
-
     </div>
-    
+
     <script src="../src/calendar.js"></script>
     <!-- Bootstrap (NO ELIMINAR) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
