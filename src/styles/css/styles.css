@@ -328,13 +328,36 @@ h2.subtitulo {
 }
 
 .titulo {
-  font-family: "Neucha";
   color: #6CB18C;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
-.pregunta {
+._mancha {
   display: flex;
-  justify-content: center;
+  width: fit-content;
+}
+
+._btn {
+  display: inline;
+  width: fit-content;
+}
+
+.mancha {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.btn2 {
+  background-color: #E6FDD3;
+  font-family: "Neucha";
+  border: none;
+  padding: 6px 20px;
+  color: #6CB18C;
+  font-size: 25px;
+  border-radius: 40px;
+  margin-left: 90%;
 }
 
 .nav--sidebar {
