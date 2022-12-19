@@ -1,0 +1,20 @@
+    @use '../abstracts/variables';
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: variables.$color3;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: variables.$color4;
+    }

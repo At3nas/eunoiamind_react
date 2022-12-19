@@ -19,7 +19,6 @@
         margin-bottom: 2em;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
     }
 }
 
@@ -31,7 +30,7 @@ ul.nav__items {
     .nav__item {
         margin-bottom: 3em;
         text-align: left;
-        
+
         &__link {
             text-decoration: none;
             color: variables.$color3;
