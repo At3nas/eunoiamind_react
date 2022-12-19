@@ -10,7 +10,20 @@
 }
 
 .pregunta{
-    display: flex;
+    margin-top: 20px;
     justify-content: center;
 }
+.container1{
+    justify-content: left;
+   
+}
 
+.mancha{
+    width: 100px;
+}
+
+.container2{
+    display: flex;
+    justify-content: right;
+    margin-top: 40px;
+}
