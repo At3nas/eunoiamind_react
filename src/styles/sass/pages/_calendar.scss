@@ -30,14 +30,16 @@
                 width: 35px;
                 height: 35px;
                 margin: 0 20px;
+                cursor: pointer;
             }
 
         }
 
         &__weeks {
-            
 
-            div.calendar__week, div.calendar__dates {
+
+            div.calendar__week,
+            div.calendar__dates {
                 display: grid;
                 grid-template-columns: repeat(7, 1fr);
                 width: 80%;
@@ -58,6 +60,16 @@
 
             .month-day {
                 margin: 40px;
+
+                &:hover:not(.last-days) {
+                    background-color: variables.$color1;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    padding: 10px;
+                    transition: 500ms;
+                    cursor: pointer;
+                }
             }
 
             .today {

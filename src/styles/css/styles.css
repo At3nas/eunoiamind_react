@@ -187,8 +187,10 @@ h1#h1-index {
   width: 35px;
   height: 35px;
   margin: 0 20px;
+  cursor: pointer;
 }
-.div__calendar__container__weeks div.calendar__week, .div__calendar__container__weeks div.calendar__dates {
+.div__calendar__container__weeks div.calendar__week,
+.div__calendar__container__weeks div.calendar__dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 80%;
@@ -206,6 +208,15 @@ h1#h1-index {
 }
 .div__calendar__container__weeks .month-day {
   margin: 40px;
+}
+.div__calendar__container__weeks .month-day:hover:not(.last-days) {
+  background-color: #E6FDD3;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 500ms;
+  cursor: pointer;
 }
 .div__calendar__container__weeks .today {
   background-color: #6CB18C;
