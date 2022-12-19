@@ -8,28 +8,36 @@
     margin-left: 20%;
 
     &__container {
-        h2.month__title {
+
+        &__year {
+            display: flex;
+            justify-content: center;
+            margin: 2em 0;
             color: variables.$color4;
         }
+
         &__month {
             display: flex;
             justify-content: center;
             padding: 10px;
             margin: 2em 0;
 
+            h3.month__title {
+                color: variables.$color4;
+            }
+
             img.calendar__arrow {
                 width: 35px;
                 height: 35px;
                 margin: 0 20px;
             }
+
         }
 
-        &__week {
-            display: flex;
-            justify-content: center;
+        &__weeks {
+            
 
-            ul.calendar__ul {
-                list-style: none;
+            div.calendar__week, div.calendar__dates {
                 display: grid;
                 grid-template-columns: repeat(7, 1fr);
                 width: 80%;
@@ -50,6 +58,19 @@
 
             .month-day {
                 margin: 40px;
+            }
+
+            .today {
+                background-color: variables.$color3;
+                color: variables.$color1;
+                padding: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+
+            .last-days {
+                font-size: 0px;
             }
 
         }
