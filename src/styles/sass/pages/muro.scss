@@ -1,0 +1,48 @@
+@use '../abstracts/variables';
+
+
+.planta{
+    max-width: 160px; 
+}
+.planta2{
+display: inline-block;
+}
+.Principal{
+    color: variables.$color3 ;
+    font-size:35px ;
+    display:inline-block;
+    margin-left: 150px;
+}
+
+.text{
+    width: 500px;
+    height: 300px;
+    margin-left: 290px;   
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: variables.$color1;
+    box-shadow:3px 3px 3px #a7e799;
+    color: variables.$color4;
+    resize: none;
+}
+
+::placeholder{
+    color: variables.$color4;
+}
+.buttons{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.buttons2{
+    margin-left: 360px;
+}
+.buttons3{
+    border: 0px solid ;
+    border-radius: 20px;
+    padding: 2px;
+    width: 80px;
+    color: variables.$color3 ;
+    background-color: variables.$color1;
+    box-shadow:3px 3px 3px #a7e799;
+}
