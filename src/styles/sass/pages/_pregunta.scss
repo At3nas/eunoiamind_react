@@ -1,9 +1,7 @@
 @use '../abstracts/variables';
 
-
-
 #fondo{
-    background-color: variables.$color2;;
+    background-color: variables.$color0;
 }
 
 .titulo{
@@ -20,17 +18,17 @@
 
 .emocion {
     width: 150px;
-    transition: 1s; 
+    transition: 600ms; 
 }
 
 .emocion:hover {
     transform: scale(1.2);   
 }
 
-._mancha{
+.contenedorbtn{
     display: flex;
-    width: fit-content;
-    margin-top: 150px;
+    // width: fit-content;
+    margin-top: 80px;
 }
 
 ._btn{
@@ -41,23 +39,25 @@
 
 .mancha{
     width: 300px;
-    margin-left: 30px;
+    margin-right: 500px;
+    position: absolute;
+    right: 540px;
+    
+
 }
 
 .btn2{
-    background-color:variables.$color1;
-    font-family:variables.$font1;
+    background-color:variables.$color2;
     border: none;
-    padding: 10px 30px;
+    padding: 7px;
+    width: 10%;
     color:variables.$color3;
-    font-size: variables.$f-size-sm;
+    font-size: 17px;
     border-radius: 40px;
-    margin-left: 80%;
+    margin-left: 1170px;
+    margin-top: 170px;
+    box-shadow:3px 3px 3px #a7e799;
 }
-
-    
-    
-
 
 
 

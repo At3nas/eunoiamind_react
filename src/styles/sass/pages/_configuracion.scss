@@ -1,13 +1,12 @@
 @use '../abstracts/variables';
 @use '../layout/sidebar';
 
-.all{
-    background-color: #cff9c6;
-}
-h1 {
+.nametop{
+
     color: variables.$color3 ;
     text-align: center;
     margin-right: 400px;
+    font-size: 37px;
 }
 
 .h3 {
@@ -21,7 +20,7 @@ h1 {
     height: 100px;
     border-radius: 100%;
     width: 10%;
-    margin-left: 350px;
+    margin-left: 330px;
     background-color: variables.$color2;
     display: inline-block;
 }
@@ -43,15 +42,15 @@ h1 {
     padding: 7px;
     width: 7%;
     display: inline;
-    box-shadow: 8px 8px 8px #a7e799;
+    box-shadow:3px 3px 3px #a7e799;
 }
 
-.foto-jona {
-    width: 100%;
-    height: 100%;
-    border: solid 1px rgb(23, 115, 7);
-    border-radius: 100%;
-}
+// .foto-jona {
+//     width: 100%;
+//     height: 100%;
+//     border: solid 1px rgb(23, 115, 7);
+//     border-radius: 100%;
+// }
 
 .nombreus {
     text-align: center;
@@ -80,7 +79,7 @@ h1 {
     padding: 7px;
     width: 450px;
     margin-left: 5%;
-    box-shadow: 10px 10px 10px #a7e799;
+    box-shadow:3px 3px 3px #a7e799;
 }
 
 .button1 {
@@ -88,7 +87,7 @@ h1 {
 }
 
 .button2 {
-    box-shadow: 8px 8px 8px #a7e799;
+    box-shadow:3px 3px 3px #a7e799;
     border: solid 0px;
     border-radius: 20px;
     padding: 5px;
