@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # styles
-/src/styles/styles.css
-/src/styles/styles.css.map
+src/styles/css/styles.css
+src/styles/css/styles.css.map
