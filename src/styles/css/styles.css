@@ -334,30 +334,46 @@ h2.subtitulo {
   margin-left: 40px;
 }
 
+.div__pregunta__emociones {
+  margin-left: 20%;
+  margin-top: 80px;
+}
+
+.emocion {
+  width: 150px;
+  transition: 1s;
+}
+
+.emocion:hover {
+  transform: scale(1.2);
+}
+
 ._mancha {
   display: flex;
   width: fit-content;
+  margin-top: 150px;
 }
 
 ._btn {
   display: inline;
   width: fit-content;
+  margin-top: 0%;
 }
 
 .mancha {
-  width: 250px;
-  margin-left: 20px;
+  width: 300px;
+  margin-left: 30px;
 }
 
 .btn2 {
   background-color: #E6FDD3;
   font-family: "Neucha";
   border: none;
-  padding: 6px 20px;
+  padding: 10px 30px;
   color: #6CB18C;
   font-size: 25px;
   border-radius: 40px;
-  margin-left: 90%;
+  margin-left: 80%;
 }
 
 .nav--sidebar {
