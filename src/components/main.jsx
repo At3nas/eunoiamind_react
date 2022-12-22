@@ -35,7 +35,7 @@ class Main extends Component {
                     </div>
 
                     <div className="header__buttons">
-                        <Link to="/welcome"><button type="button" className="btn header__btn">Registrarse</button></Link>
+                        <Link to="/registro"><button type="button" className="btn header__btn">Registrarse</button></Link>
                         <a href="/public/login.html"><button type="button" className="btn header__btn">Iniciar sesión</button></a>
                     </div>
                 </header>
