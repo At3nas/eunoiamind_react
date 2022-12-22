@@ -1,6 +1,5 @@
 @use '../abstracts/variables';
 
-
 .planta{
     max-width: 160px; 
 }
@@ -24,6 +23,7 @@ display: inline-block;
     box-shadow:3px 3px 3px #a7e799;
     color: variables.$color4;
     resize: none;
+    display: inline;
 }
 
 ::placeholder{
@@ -45,4 +45,14 @@ display: inline-block;
     color: variables.$color3 ;
     background-color: variables.$color1;
     box-shadow:3px 3px 3px #a7e799;
+}
+
+.manchitaMuro{
+    width: 30%;
+    margin-left: 1000px;
+}
+
+.manchitaMuro2{
+   position: absolute;
+   top:300px
 }
