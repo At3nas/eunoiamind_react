@@ -1,16 +1,64 @@
 @use '../abstracts/variables';
 
 #fondo{
-    background-color: variables.$color2;;
+    background-color: variables.$color0;
 }
 
 .titulo{
-    font-family: variables.$font1;
     color: variables.$color3;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
-.pregunta{
-    display: flex;
-    justify-content: center;
+.div__pregunta__emociones{
+    margin-left: 20%;
+    margin-top: 80px;
 }
+
+.emocion {
+    width: 150px;
+    transition: 600ms; 
+}
+
+.emocion:hover {
+    transform: scale(1.2);   
+}
+
+.contenedorbtn{
+    display: flex;
+    // width: fit-content;
+    margin-top: 80px;
+}
+
+._btn{
+    display: inline;
+    width: fit-content;
+    margin-top: 0%;
+}
+
+.mancha{
+    width: 300px;
+    margin-right: 500px;
+    position: absolute;
+    right: 540px;
+    
+
+}
+
+.btn2{
+    background-color:variables.$color2;
+    border: none;
+    padding: 7px;
+    width: 10%;
+    color:variables.$color3;
+    font-size: 17px;
+    border-radius: 40px;
+    margin-left: 1170px;
+    margin-top: 170px;
+    box-shadow:3px 3px 3px #a7e799;
+}
+
+
+
 

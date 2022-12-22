@@ -1,2 +1,70 @@
 @use '../abstracts/variables';
 
+* {
+    border: 1px solid black;
+}
+
+.div__home {
+    margin-left: 20%;
+    display: flex;
+
+    &__msg {
+        margin-left: 10%;
+        margin-top: 2em;
+        background-color: variables.$color1;
+        justify-content: center;
+        width: 900px;
+        height: 260px;
+        border-radius: 40px;
+        padding: 20px;
+
+        &__title {
+            font-size: variables.$f-size-lg;
+            color: variables.$color3;
+        }
+
+        &__subtitle {
+            font-size: variables.$f-size-md;
+            color: variables.$color4;
+        }
+
+        &__txt {
+            display: inline-block;
+            margin-left: 2em;
+            margin-top: 1em;
+        }
+
+        &__btn {
+            background-color: variables.$color2;
+            color: variables.$color3;
+            font-size: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 40px;
+            border: none;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: variables.$color3;
+                color: variables.$color1;
+                transition: 400ms;
+            }
+        }
+
+        &__img {
+            display: inline-block;
+            margin-left: 40%;
+            
+
+            img.manchita__home {
+                width: 200px;
+                margin-bottom: 7em;
+            }
+        }
+    }
+
+    &__week-view {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
