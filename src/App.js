@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Main from './components/main';
 import Welcome from './components/welcome';
+import Registro from './components/registro';
 
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
-
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/registro" element={<Registro />} />
         </Routes>
       </Router>
     </div>

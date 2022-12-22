@@ -1,9 +1,40 @@
-import React,{Component} from 'react';
-import './styles/sass/styles.scss';
+import React from 'react';
+import NavbarIndex from './navbarIndex';
+import '../styles/sass/styles.scss';
 
-class Bienvenida extends Component{
+const Registro = () => {
 
-    
+    return (
+        <>
+            <NavbarIndex />
+
+            <div className="contenedor">-
+                <form className="form_registro" form action="login.html" method="GET">
+                    <h2>¡CREA TU CUENTA!</h2>
+                    <div className="mb-3 _input">
+                        <label for="nombre" className="form-label">Nombre de usuario:</label>
+                        <input type="text" className="form-control input_registro" id="nombre" />
+                    </div>
+                    <div className="mb-3 _input">
+                        <label for="exampleFormControlInput1" className="form-label">Correo:</label>
+                        <input type="email" className="form-control input_registro" id="correo" />
+                    </div>
+                    <div className="mb-3 _input">
+                        <label for="password" className="form-label">Contraseña:</label>
+                        <input type="password" className="form-control input_registro" id="password" />
+                    </div>
+                    <div className="mb-3 _input">
+                        <label for="password2" className="form-label">Confirme contraseña:</label>
+                        <input type="password" className="form-control input_registro" id="password2" />
+                    </div>
+                    <div className="div_btn">
+                        <button className="btn_submit" type="submit">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+        </>
+    )
+
+
 }
-
-export default Bienvenida;
+export default Registro;
