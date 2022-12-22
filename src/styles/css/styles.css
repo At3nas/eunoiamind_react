@@ -585,6 +585,7 @@ ul.nav__items .nav__item__icon {
   box-shadow: 3px 3px 3px #a7e799;
   color: #B17B6C;
   resize: none;
+  display: inline;
 }
 
 ::placeholder {
@@ -608,6 +609,16 @@ ul.nav__items .nav__item__icon {
   color: #6CB18C;
   background-color: #E6FDD3;
   box-shadow: 3px 3px 3px #a7e799;
+}
+
+.manchitaMuro {
+  width: 30%;
+  margin-left: 1000px;
+}
+
+.manchitaMuro2 {
+  position: absolute;
+  top: 300px;
 }
 
 .navbar {
