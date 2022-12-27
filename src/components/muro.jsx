@@ -4,9 +4,10 @@ import '../styles/sass/styles.scss';
 
 const Muro = () => {
     return (
-<div>
+        <form action="" method="Get">
+
         <div className="planta2">
-        <img src="../src/assets/plant-hanging1.png" alt="planta1" className="planta"/>
+        <img src={require("../assets/plant-hanging1.png")} alt="planta1" className="planta"/>
     </div>
 
     <div className="Principal">
@@ -15,17 +16,16 @@ const Muro = () => {
     <div>
         <textarea className="text" placeholder="Escribe aqui lo que quieras"></textarea>
         <div className="manchitaMuro2">
-        <img src="../src/assets/logo-manchita.png" alt="" className="manchitaMuro">
+        <img src={require("../assets/logo-manchita.png")} alt="manchamuro" className="manchitaMuro"/>
     </div>    
     </div>
 
     <div className="buttons">
-        <button className="buttons1 buttons3">Omitir</button>
-        <button className="buttons2 buttons3">Guardar</button>
+        <button className="buttons1 buttons3" type="button">Omitir</button>
+        
+        <button className="buttons2 buttons3" type="button">Guardar</button>
     </div>
-</div>
-                
-
+    </form>
                 );
 };
 
