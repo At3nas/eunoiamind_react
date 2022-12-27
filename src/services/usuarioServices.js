@@ -1,15 +1,12 @@
-//consumir API
-//axios - libreria encargada de hacer peticiones
 import axios from 'axios';
 
 //establecer la ruta por deafult
-const rutaBase= "http://localhost:9085/";
+const rutaBase = "http://localhost:9085/usuario";
 
 //funcion de llamado
-const guardarUsuario=async()=>{
-    const respuesta = await axios.get(rutaBase+"/guardar/usuario");
-    console.log(respuesta.data)
+const  createUser = async (usuario) => {
+    const respuesta = await axios.post(rutaBase +"/guardar", usuario);
     return respuesta.data;
 }
 
-export {guardarUsuario};
+export {createUser};

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import NavbarIndex from '../components/navbarIndex';
 import SliderIndex from '../components/sliderIndex';
+import ModalFormComponent from './modal_registro';
+import {createUser} from '../services/usuarioServices'
 import '../styles/sass/styles.scss';
 
 class Main extends Component {
@@ -35,7 +36,9 @@ class Main extends Component {
                     </div>
 
                     <div className="header__buttons">
-                        <Link to="/registro"><button type="button" className="btn header__btn">Registrarse</button></Link>
+                        <ModalFormComponent
+                        createUser={createUser}
+                        />
                         <a href="/public/login.html"><button type="button" className="btn header__btn">Iniciar sesión</button></a>
                     </div>
                 </header>
