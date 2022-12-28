@@ -1,8 +1,8 @@
 @use '../abstracts/variables';
 
-/* * {
+* {
     border: 1px solid black;
-} */
+}
 
 .div__home {
     margin-left: 20%;
@@ -64,7 +64,7 @@
     }
 
     &__week {
-        margin-top: 2em;
+        margin-top: 4em;
 
         &__days,
         &__emo {
@@ -73,7 +73,6 @@
             width: 80%;
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            // column-gap: 50px;
             text-align: center;
             color: variables.$color3;
             font-size: 20px;
@@ -82,7 +81,7 @@
 
         &__days__p {
             font-size: variables.$f-size-md;
-            color: variables.$color4;
+            color: variables.$color4;   
         }
 
         &__emo__p {
@@ -93,7 +92,8 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
-        margin-top: 2em;
+        margin-top: 4em;
+        margin-bottom: 20px;
 
         .plant__home {
             width: 180px;
@@ -101,7 +101,7 @@
         }
 
         &__muro {
-            margin-right: 20px;
+            margin-right: 8%;
             padding: 40px;
             background-color: variables.$color1;
             width: 600px;
