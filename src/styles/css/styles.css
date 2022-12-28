@@ -162,10 +162,6 @@ h1#h1-index {
   display: block;
 }
 
-* {
-  border: 1px solid black;
-}
-
 .div__home {
   margin-left: 20%;
   display: flex;
@@ -383,21 +379,16 @@ h2.subtitulo {
 }
 
 .div__pregunta__emociones {
-  margin-left: 20%;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .emocion {
   width: 150px;
-  transition: 600ms;
-}
-
-.emocion:hover {
-  transform: scale(1.2);
+  margin: 20px;
 }
 
 .contenedorbtn {
-  display: flex;
+  display: block;
   margin-top: 80px;
 }
 
@@ -425,6 +416,64 @@ h2.subtitulo {
   margin-left: 1170px;
   margin-top: 170px;
   box-shadow: 3px 3px 3px #a7e799;
+}
+
+.parraPre {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+.emociones__parrafo1 {
+  margin-right: 500px;
+}
+
+.emociones__parrafo2 {
+  margin-left: 200px;
+}
+
+.emociones__parrafo3 {
+  margin-left: 400px;
+}
+
+.emociones__parrafo4 {
+  margin-left: 600px;
+}
+
+.emociones__parrafo5 {
+  margin-left: 720px;
+}
+
+.emociones__parrafo6 {
+  margin-left: 780px;
+}
+
+.animacion:hover + p {
+  opacity: 1;
+  margin-top: 20px;
+  transition: 1.5s;
+  height: 50px;
+  overflow: hidden;
+  color: #B17B6C;
+}
+
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .nav--sidebar {
