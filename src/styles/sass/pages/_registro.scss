@@ -45,3 +45,51 @@ button.btn_submit{
     display: flex;
     justify-content: center;
 }
+
+
+.bi{
+    color: variables.$color3;
+}
+
+.btn-primary{
+    background-color: variables.$color1;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    color: variables.$color3;
+    font-size: variables.$f-size-sm;
+    border: 0px ;
+
+    &:hover {
+        background-color:variables.$color1;
+        color: variables.$color3;
+        box-shadow:3px 3px 3px #a7e799;
+    }
+
+
+    &:active{
+        background-color: rgb(255, 255, 255) !important;
+    }
+}
+
+.modal-content{
+    width: 800px;
+margin-left: -150px;
+}
+
+.form_registro{
+    width: 700px;
+    margin: 20px auto;
+}
+.sumbitRegistro{
+    width: 550px;
+    margin: 0 auto;
+}
+
+
+.form-label{
+    margin-right: 350px;
+}
+
+
+

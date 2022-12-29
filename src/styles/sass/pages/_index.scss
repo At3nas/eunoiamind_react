@@ -100,10 +100,13 @@ h1#h1-index {
     border-radius: 40px;
     color: variables.$color3;
     font-size: variables.$f-size-sm;
+    border: 0px;
 
     &:hover {
-        background-color: variables.$color2;
+        // background-color: variables.$color2;
         color: variables.$color3;
+        box-shadow:3px 3px 3px #a7e799;
+        
     }
 }
 

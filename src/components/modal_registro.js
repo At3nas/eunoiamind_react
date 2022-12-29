@@ -33,31 +33,36 @@ function ModalFormComponent({ createUser }) {
 
     return (
         <>
+        <div className="btnRegistro">
             <Button><i class="bi bi-plus-lg" variant="success" onClick={handleShow}>Registrarse</i></Button>
-
+</div>
             <Modal show={show} onHide={handleClose} >
             <Modal.Body className="form_registro">
+         <div className="sumbitRegistro">
                     <form onSubmit={handleSubmit}>
+                        
                     <h2>¡CREA TU CUENTA!</h2>
                         <div className='form-group _input'>
-                            <label for="nombre" className="form-label">Nombre</label>
-                            <input type='text' className='form-control input_registro' id='nombre' placeholder='nombre' value={nombreUsuario} name='nombreUsuario' onChange={handleInputChange} />
+                            <label for="nombre" className="form-label">Nombre de usuario:</label>
+                            <input type='text' className='form-control input_registro' id='nombre' value={nombreUsuario} name='nombreUsuario' onChange={handleInputChange} />
                         </div>
                         <div className='form-group _input'>
                             <label for="correo" className="form-label">Correo</label>
-                            <input type='text' className='form-control input_registro' id='correo' placeholder='correo' value={correo} name='correo' onChange={handleInputChange} />
+                            <input type='text' className='form-control input_registro' id='correo'  value={correo} name='correo' onChange={handleInputChange} />
                         </div>
                         <br />
                         <div className='form-group _input'>
                             <label for="contraseña" className="form-label" >Contraseña</label>
-                                <input type='password' className='form-control input_registro' id='contraseña' placeholder='contraseña' value={contraseña} name='contraseña' onChange={handleInputChange} />
+                                <input type='password' className='form-control input_registro' id='contraseña' placeholder='Contraseña' value={contraseña} name='contraseña' onChange={handleInputChange} />
                         </div>
                         <div className='form-group _input'>
                             <label for="contraseña2">Confirme contraseña</label>
-                                <input type='password' className='form-control input_registro' id='contraseña2' placeholder='confirma tu contraseña' value={contraseña2} name='contraseña2' onChange={handleInputChange} />
+                                <input type='password' className='form-control input_registro' id='contraseña2' placeholder='Confirma tu contraseña' value={contraseña2} name='contraseña2' onChange={handleInputChange} />
                         </div>
-                        <button type='submit' onClick={handleClose} className='btn btn_submit'>Agregar</button>
+                        <button type='submit' onClick={handleClose} className='btn btn_submit'>Aceptar</button>
+                      
                     </form>
+                </div>
                     </Modal.Body>
             </Modal>
         </>
