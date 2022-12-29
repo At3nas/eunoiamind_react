@@ -164,10 +164,9 @@ h1#h1-index {
 
 .div__home {
   margin-left: 20%;
-  height: 100%;
+  display: flex;
 }
 .div__home__msg {
-  display: flex;
   margin-left: 10%;
   margin-top: 2em;
   background-color: #E6FDD3;
@@ -186,7 +185,8 @@ h1#h1-index {
   color: #B17B6C;
 }
 .div__home__msg__txt {
-  margin-left: 30px;
+  display: inline-block;
+  margin-left: 2em;
   margin-top: 1em;
 }
 .div__home__msg__btn {
@@ -205,51 +205,16 @@ h1#h1-index {
   transition: 400ms;
 }
 .div__home__msg__img {
-  margin-top: 1em;
+  display: inline-block;
   margin-left: 40%;
-  width: fit-content;
-  height: fit-content;
 }
 .div__home__msg__img img.manchita__home {
   width: 200px;
+  margin-bottom: 7em;
 }
-.div__home__week {
-  margin-top: 4em;
-}
-.div__home__week__days, .div__home__week__emo {
-  margin: 0px;
-  padding: 0px;
-  width: 80%;
+.div__home__week-view {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  text-align: center;
-  color: #6CB18C;
-  font-size: 20px;
-}
-.div__home__week__days__p {
-  font-size: 30px;
-  color: #B17B6C;
-}
-.div__home__week__emo__p {
-  font-size: 30px;
-}
-.div__home__bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4em;
-  margin-bottom: 20px;
-}
-.div__home__bottom .plant__home {
-  width: 180px;
-  margin-left: 20px;
-}
-.div__home__bottom__muro {
-  margin-right: 8%;
-  padding: 40px;
-  background-color: #E6FDD3;
-  width: 600px;
-  height: 240px;
-  border-radius: 40px;
 }
 
 .div__calendar {

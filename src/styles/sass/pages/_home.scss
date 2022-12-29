@@ -1,5 +1,8 @@
 @use '../abstracts/variables';
 
+* {
+    border: 1px solid black;
+}
 
 .div__home {
     margin-left: 20%;
