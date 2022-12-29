@@ -3,6 +3,12 @@
 .div__calendar {
     margin-left: 20%;
 
+    h1.page__title {
+        color: variables.$color3;
+        font-size: variables.$f-size-lg;
+        text-align: center;
+    }
+
     &__container {
 
         &__year {
