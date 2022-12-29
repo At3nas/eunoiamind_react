@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import Slider from './sliders';
+
 
 class SliderIndex extends Component {
     render() {
@@ -72,7 +74,7 @@ class SliderIndex extends Component {
                     </section>
                     <img src={require("../assets/chevron-right-regular-24.png")} className="slider__arrow prueba-slider" id="next" alt="" />
                 </div>
-            <script src="slider.js"></script>
+                {/* <script><Slider/></script> */}
             </section>
         );
     }
