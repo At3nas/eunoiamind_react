@@ -15,7 +15,7 @@ const Home = () => {
                             <button type="button" className="div__home__msg__btn">Registrar emoción</button>
                         </div>
                         <div className="div__home__msg__img">
-                            <img src={require("../src/assets/logo-manchita.png")} className="manchita__home" alt="" />
+                            <img src={require("../assets/logo-manchita.png")} className="manchita__home" alt="" />
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="div__home__bottom">
-                        <img src={require("../src/assets/plant-1.png")} className="plant__home" alt="Planta decorativa" />
+                        <img src={require("../assets/plant-1.png")} className="plant__home" alt="Planta decorativa" />
 
                             <div className="div__home__bottom__muro">
                                 <h2 className="div__home__msg__title" style="text-align:center">¡Cuéntanos lo que quieras!</h2>
@@ -49,7 +49,6 @@ const Home = () => {
                             </div>
 
                     </div>
-                    {/* <!-- Fin de div__home --> */}
             </div>
         </div>
     );

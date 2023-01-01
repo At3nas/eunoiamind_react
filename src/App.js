@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import Main from './components/main';
 import Welcome from './components/welcome';
 import Registro from './components/registro';
 import Muro from './components/muro';
 import Configuraciones from './components/configuraciones';
+import Home from './components/home'
 
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/registro" element={<Registro />} />
           <Route path="/muro" element={<Muro />} />
           <Route path="/configuraciones" element={<Configuraciones />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </div>

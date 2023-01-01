@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/sass/styles.scss';
 
 const Welcome = () => {
@@ -14,7 +15,7 @@ const Welcome = () => {
                 <h2 className="subtitulo">Comencemos llenando algunos datos</h2>
             </div>
             <div className="contenedor">
-                <a href="pregunta.html"><button type="button" className="btn1">Comenzar</button></a>
+                <Link to={"/home"}><button type="button" className="btn1">Comenzar</button></Link>
             </div>
         </div>
     );
