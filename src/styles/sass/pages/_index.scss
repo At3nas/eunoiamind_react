@@ -105,8 +105,8 @@ h1#h1-index {
     &:hover {
         // background-color: variables.$color2;
         color: variables.$color3;
-        box-shadow:3px 3px 3px #a7e799;
-        
+        box-shadow: 3px 3px 3px #a7e799;
+
     }
 }
 
@@ -132,13 +132,15 @@ h1#h1-index {
 
         /* ---------- Cards | Producto ---------- */
         &__cards {
-            display: flex;
+            display: grid;
+            grid: repeat(2, 500px) / auto-flow 600px;
 
             .card {
                 display: inline-block;
-                margin-right: 2em;
                 border-color: variables.$color3;
                 border-width: 2px;
+                margin-right: 2em;
+                margin-bottom: 2em;
 
                 &-title {
                     color: variables.$color3;
@@ -146,6 +148,7 @@ h1#h1-index {
 
                 &-text {
                     color: variables.$color4;
+                    font-size: 20px;
                 }
 
             }
