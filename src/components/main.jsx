@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import NavbarIndex from '../components/navbarIndex';
 import SliderIndex from '../components/sliderIndex';
 import ModalFormComponent from './modal_registro';
-import {createUser} from '../services/usuarioServices'
+import { createUser } from '../services/usuarioServices'
 import '../styles/sass/styles.scss';
 
 class Main extends Component {
@@ -37,7 +37,7 @@ class Main extends Component {
 
                     <div className="header__buttons">
                         <ModalFormComponent
-                        createUser={createUser}
+                            createUser={createUser}
                         />
                         <a href="/public/login.html"><button type="button" className="btn header__btn">Iniciar sesión</button></a>
                     </div>
@@ -49,33 +49,42 @@ class Main extends Component {
                     <p className="section__p">Lee más acerca de las características y funciones de EunoiaMind</p>
                     <br />
                     <div className="section__div__cards">
+
                         <div className="card">
-                            <img src={require("../assets/placeholder1.png")} className="card-img-top" alt="..." />
+                            <img src={require("../assets/home-foto.png")} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h3 className="card-title">Diseño bonito y simple</h3>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of
-                                    the card's content.</p>
+                                <h3 className="card-title">Interfaz bonita y simple</h3>
+                                <p className="card-text">
+                                    EunoiaMind se caracteriza por tener un diseño bonito y un funcionamiento sencillo para ser usado por cualquier usuario. Podrás adaptarte sin problemas a su intuitiva interfaz en poco tiempo.
+                                </p>
                             </div>
                         </div>
 
                         <div className="card">
-                            <img src={require("../assets/placeholder2.png")} className="card-img-top" alt="..." />
+                            <img src={require("../assets/muro-foto.png")} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h3 className="card-title">Escribe cómo te sientes</h3>
+                                <p className="card-text">Cuando agregas una emoción, tienes la opción de escribir lo que desees. Puedes contar por qué te sientes de esa forma, desahogarte o no escribir. Tú decides qué quieres registrar.</p>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={require("../assets/emocion-foto.png")} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h3 className="card-title">Registra tus emociones</h3>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of
-                                    the card's content.</p>
+                                <p className="card-text">
+                                    Con EunoiaMind puedes registrar fácilmente las emociones que has estado sintiendo durante el día. Puedes escoger entre seis emociones principales o agregar una emoción personalizada.
+                                </p>
                             </div>
                         </div>
 
                         <div className="card">
-                            <img src={require("../assets/placeholder2.png")} className="card-img-top" alt="..." />
+                            <img src={require("../assets/calendario-foto.png")} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h3 className="card-title">Lorem Ipsum</h3>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of
-                                    the card's content.</p>
+                                <h3 className="card-title">Seguimiento de tus emociones</h3>
+                                <p className="card-text">
+                                    Lleva fácilmente el seguimiento de tus emociones semanales, mensuales o anuales con el calendario. Puedes revisar tus registros de emociones en cualquier momento.
+                                </p>
                             </div>
                         </div>
                     </div>
