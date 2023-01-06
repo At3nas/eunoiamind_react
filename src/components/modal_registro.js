@@ -43,21 +43,21 @@ function ModalFormComponent({ createUser }) {
                         
                     <h2>¡CREA TU CUENTA!</h2>
                         <div className='form-group _input'>
-                            <label for="nombre" className="form-label">Nombre de usuario:</label>
+                            <label for="nombre" className="form-label  form-label--nombreUsu">Nombre de usuario:</label>
                             <input type='text' className='form-control input_registro' id='nombre' value={nombreUsuario} name='nombreUsuario' onChange={handleInputChange} />
                         </div>
                         <div className='form-group _input'>
-                            <label for="correo" className="form-label">Correo</label>
+                            <label for="correo" className="form-label form-label--Correo">Correo:</label>
                             <input type='text' className='form-control input_registro' id='correo'  value={correo} name='correo' onChange={handleInputChange} />
                         </div>
                         <br />
                         <div className='form-group _input'>
-                            <label for="contraseña" className="form-label" >Contraseña</label>
-                                <input type='password' className='form-control input_registro' id='contraseña' placeholder='Contraseña' value={contraseña} name='contraseña' onChange={handleInputChange} />
+                            <label for="contraseña" className="form-label" >Contraseña:</label>
+                                <input type='password' className='form-control input_registro' id='contraseña'  value={contraseña} name='contraseña' onChange={handleInputChange} />
                         </div>
                         <div className='form-group _input'>
-                            <label for="contraseña2">Confirme contraseña</label>
-                                <input type='password' className='form-control input_registro' id='contraseña2' placeholder='Confirma tu contraseña' value={contraseña2} name='contraseña2' onChange={handleInputChange} />
+                            <label for="contraseña2" className="form-label form-label--ConfirContra ">Confirme contraseña:</label>
+                                <input type='password' className='form-control input_registro' id='contraseña2'  value={contraseña2} name='contraseña2' onChange={handleInputChange} />
                         </div>
                         <button type='submit' onClick={handleClose} className='btn btn_submit'>Aceptar</button>
                       

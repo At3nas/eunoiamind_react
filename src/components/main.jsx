@@ -39,7 +39,7 @@ class Main extends Component {
                         <ModalFormComponent
                             createUser={createUser}
                         />
-                        <a href="/public/login.html"><button type="button" className="btn header__btn">Iniciar sesión</button></a>
+                        <a href="login"><button type="button" className="btn header__btn">Iniciar sesión</button></a>
                     </div>
                 </header>
 

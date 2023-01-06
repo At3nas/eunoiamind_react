@@ -4,6 +4,7 @@ import Welcome from './components/welcome';
 import Registro from './components/registro';
 import Muro from './components/muro';
 import Configuraciones from './components/configuraciones';
+import Login from './components/login';
 
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/registro" element={<Registro />} />
           <Route path="/muro" element={<Muro />} />
           <Route path="/configuraciones" element={<Configuraciones />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>
