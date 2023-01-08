@@ -38,6 +38,15 @@ button.btn_submit{
     color:variables.$color3;
     font-size: variables.$f-size-sm;
     border-radius: 40px;
+    display: block;
+    width: 25%;
+margin: 0 auto;
+
+&:hover{
+    background-color:variables.$color2;
+    color: variables.$color3;
+    box-shadow:3px 3px 3px #a7e799;
+}
 }
 
 .div_btn{
@@ -75,6 +84,7 @@ button.btn_submit{
 .modal-content{
     width: 800px;
 margin-left: -150px;
+background-color: transparent;
 }
 
 .form_registro{
@@ -88,8 +98,18 @@ margin-left: -150px;
 
 
 .form-label{
-    margin-right: 350px;
+    margin-right: 330px;
+    width: max-content;
+
 }
 
+.form-label--nombreUsu{
+    margin-right: 240px;
+}
 
-
+.form-label--ConfirContra{
+margin-right: 230px;
+}
+.form-label--Correo{
+    margin-right: 379px;
+}
