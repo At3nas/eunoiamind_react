@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Main from './components/main';
-import Welcome from './components/welcome';
-import Registro from './components/registro';
+import Bienvenida from './components/bienvenida';
+import Pregunta from './components/pregunta';
 import Muro from './components/muro';
+import Home from './components/home';
 import Configuraciones from './components/configuraciones';
+import Calendario from './components/calendario';
 import Login from './components/login';
+import Registro from './components/registro';
 
 import './styles/css/App.css';
 import './styles/sass/styles.scss';
@@ -15,10 +18,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/welcome" element={<Welcome />} />
-          <Route path="/registro" element={<Registro />} />
+          <Route path="/bienvenida" element={<Bienvenida />} />
+          <Route path="/pregunta" element={<Pregunta />} />
           <Route path="/muro" element={<Muro />} />
-          <Route path="/configuraciones" element={<Configuraciones />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/calendario" element={<Calendario />} />
+          <Route path="/configuracion" element={<Configuraciones />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
