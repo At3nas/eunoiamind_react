@@ -42,6 +42,7 @@ button.btn_submit{
     width: 25%;
 margin: 0 auto;
 
+
 &:hover{
     background-color:variables.$color2;
     color: variables.$color3;
@@ -107,9 +108,10 @@ background-color: transparent;
     margin-right: 240px;
 }
 
-.form-label--ConfirContra{
-margin-right: 230px;
-}
 .form-label--Correo{
-    margin-right: 379px;
+    margin-right: 375px;
+}
+
+.confirme-contraseña{
+    margin-left: -220px;
 }

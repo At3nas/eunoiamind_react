@@ -1,2 +1,24 @@
 @use '../abstracts/variables';
 
+.form-ingreso-corre{
+    margin-left: -45px;
+}
+
+.btn_ingreso-aceptar{
+    background-color:variables.$color2;
+    font-family:variables.$font1;
+    border: none;
+    padding: 6px 20px;
+    color:variables.$color3;
+    font-size: variables.$f-size-sm;
+    border-radius: 40px;
+    display: block;
+    width: 25%;
+margin: 0 auto;
+
+&:hover{
+    background-color:variables.$color2;
+    color: variables.$color3;
+    box-shadow:3px 3px 3px #a7e799;
+}
+}
