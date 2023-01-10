@@ -50,7 +50,7 @@ function ModalIngresoComponent({ findUser }) {
                             <label for="contraseña" className="form-label" >Contraseña</label>
                                 <input type='password' className='form-control input_registro' id='contraseña' value={contraseña} name='contraseña' onChange={handleInputChange} />
                         </div>
-                        <Link to={"/welcome"}><button type="button" className="btn_submit">Aceptar</button></Link>
+                        <Link to={"/bienvenida"}><button type="button" className="btn_submit">Aceptar</button></Link>
                     </form>
                 </div>
                     </Modal.Body>
