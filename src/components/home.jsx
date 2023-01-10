@@ -44,8 +44,8 @@ const Home = () => {
                         <img src={require("../assets/plant-1.png")} className="plant__home" alt="Planta decorativa" />
 
                             <div className="div__home__bottom__muro">
-                                <h2 className="div__home__msg__title" style="text-align:center">¡Cuéntanos lo que quieras!</h2>
-                                <button type="button" className="div__home__msg__btn" style="margin-left:30%">Escribe aquí</button>
+                                <h2 className="div__home__msg__title">¡Cuéntanos lo que quieras!</h2>
+                                <button type="button" className="div__home__msg__btn" >Escribe aquí</button>
                             </div>
 
                     </div>

@@ -15,7 +15,7 @@ const Welcome = () => {
                 <h2 className="subtitulo">Comencemos llenando algunos datos</h2>
             </div>
             <div className="contenedor">
-                <Link to={"/home"}><button type="button" className="btn1">Comenzar</button></Link>
+                <Link to={"/pregunta"}><button type="button" className="btn1">Comenzar</button></Link>
             </div>
         </div>
     );

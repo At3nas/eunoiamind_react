@@ -18,6 +18,7 @@
         &__title {
             font-size: variables.$f-size-lg;
             color: variables.$color3;
+            text-align:center;
         }
 
         &__subtitle {
@@ -39,6 +40,7 @@
             border-radius: 40px;
             border: none;
             margin-top: 20px;
+            margin-left:30%;
 
             &:hover {
                 background-color: variables.$color3;

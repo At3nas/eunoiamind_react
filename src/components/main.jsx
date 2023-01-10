@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import NavbarIndex from '../components/navbarIndex';
 import SliderIndex from '../components/sliderIndex';
 import ModalFormComponent from './modal_registro';
+import ModalIngresoComponent from './modal_ingreso';
 import { createUser } from '../services/usuarioServices'
 import '../styles/sass/styles.scss';
 
@@ -39,7 +39,9 @@ class Main extends Component {
                         <ModalFormComponent
                             createUser={createUser}
                         />
-                        <Link to={"/welcome"}><button type="button" className="btn header__btn">Iniciar sesión</button></Link>
+                        <ModalIngresoComponent
+                            createUser={createUser}
+                        />
                     </div>
                 </header>
 
