@@ -11,22 +11,27 @@ const Pregunta = () => {
       </div>
 
       <div class="div__pregunta__emociones">
-        <img src={require("../assets/felicidad.png")} class="emocion" alt='' />
-        <img src={require("../assets/miedo.png")} class="emocion" alt='' />
-        <img src={require("../assets/enojo.png")} class="emocion" alt='' />
-        <img src={require("../assets/disgusto.png")} class="emocion" alt='' />
-        <img src={require("../assets/sorpresa.png")} class="emocion" alt='' />
-        <img src={require("../assets/tristeza.png")} class="emocion" alt='' />
+        <img src={require("../assets/felicidad.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>
+        <img src={require("../assets/miedo.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>       
+        <img src={require("../assets/enojo.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>
+        <img src={require("../assets/disgusto.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>
+        <img src={require("../assets/sorpresa.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>
+        <img src={require("../assets/tristeza.png")} class="emocion hvr-bounce-in animacion" alt='' />
+        <p className="parrafo-pre parrafo-pre6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias, labore consectetur beatae nemo, tempore facilis eos consequuntur nisi ut quae </p>
       </div>
       <div>
         <Emociones />
       </div>
-      <div class="_mancha">
+      
         <img class="mancha" src={require("../assets/logo-manchita.png")} alt='' />
-      </div>
 
       <div class="_btn">
-        <Link to={"/home"}><button type="button" class="btn2">Enviar</button></Link>
+        <Link to={"/home"}><button type="button" class="btn2-pregunta">Enviar</button></Link>
       </div>
     </div>
   );

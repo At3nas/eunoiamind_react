@@ -6,14 +6,14 @@ h1.titulo-bienvenida{
     font-family:variables.$font1;
     font-size:variables.$f-size-lg;
     justify-content: center;
-
 }
 
 //clase de los div
 .contenedor{
     display: flex;
     justify-content: center;
-    margin-top: 40px; 
+    position: relative;
+    top: 40px;
 }
 
 h2.subtitulo{
@@ -23,20 +23,31 @@ h2.subtitulo{
     justify-content: center;
 }
 
-.btn1{
-    background-color:variables.$color1;
+.btn1-bienvenida{
+    background-color:variables.$color2;
     font-family:variables.$font1;
     border: none;
     padding: 6px 20px;
     color:variables.$color3;
     font-size: variables.$f-size-sm;
     border-radius: 40px;
+    &:hover{
+        background-color:variables.$color2;
+        color: variables.$color3;
+        box-shadow:3px 3px 3px #a7e799;
+    }
 }
 
-#fondoverde{
-    background-color:variables.$color0;
+.logo-bienvenida{
+    width: 350px;
 }
 
-.logo{
-    width: 350px; 
+#fondo-bienvenida{
+    background-color:variables.$color1 ;
+    width: 100vw;
+    height:100vh;
+}
+
+.contenedor-bienvenida{
+    top: 85px;
 }

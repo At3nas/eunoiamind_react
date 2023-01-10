@@ -40,17 +40,17 @@ function ModalIngresoComponent({ findUser }) {
         <div className="sumbitRegistro">
                     <form onSubmit={handleSubmit}>
                         
-                    <h2>ACCEDE CON TUS DATOS!</h2>
+                    <h2>¡ACCEDE CON TUS DATOS!</h2>
                         <div className='form-group _input'>
-                            <label for="correo" className="form-label">Correo</label>
+                            <label for="correo" className="form-label form-ingreso-corre">Correo:</label>
                             <input type='text' className='form-control input_registro' id='correo'  value={correo} name='correo' onChange={handleInputChange} />
                         </div>
                         <br />
                         <div className='form-group _input'>
-                            <label for="contraseña" className="form-label" >Contraseña</label>
+                            <label for="contraseña" className="form-label" >Contraseña:</label>
                                 <input type='password' className='form-control input_registro' id='contraseña' value={contraseña} name='contraseña' onChange={handleInputChange} />
                         </div>
-                        <Link to={"/bienvenida"}><button type="button" className="btn_submit">Aceptar</button></Link>
+                        <Link to={"/bienvenida"}><button type="button" className="btn_ingreso-aceptar">Aceptar</button></Link>
                     </form>
                 </div>
                     </Modal.Body>
