@@ -9,4 +9,8 @@ const  createUser = async (usuario) => {
     return respuesta.data;
 }
 
-export {createUser};
+const findUser = async (correo, contraseña) => {
+    const respuesta = await axios.post(rutaBase +"/login", correo, contraseña);
+    return respuesta.data;
+}
+export {createUser, findUser};

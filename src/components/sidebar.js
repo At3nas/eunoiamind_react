@@ -9,7 +9,6 @@ class Sidebar extends Component {
         <img src={require("../assets/avatar_test.jpg")} className="nav__avatar" alt="Avatar del usuario" />
 
         <ul className="nav__items">
-
           <Link to="/home">
             <li className="nav__item">
               <a href="home.html" className="nav__item__link"><img src={require("../assets/icon-home.png")}
@@ -26,7 +25,6 @@ class Sidebar extends Component {
             <li className="nav__item"><a href="index.html" className="nav__item__link"><img src={require("../assets/icon-logout.png")}
               className="nav__item__icon" alt="Icono de Cerrar sesión" />Cerrar sesión</a></li></Link>
         </ul>
-
       </nav>
     )
   }

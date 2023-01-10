@@ -19,7 +19,6 @@ const Home = () => {
             <img src={require("../assets/logo-manchita.png")} className="manchita__home" alt="" />
           </div>
         </div>
-
         <div className="div__home__week center-element">
           <div className="div__home__week__days center-element">
             <p className="div__home__week__days__p">L</p>
@@ -48,7 +47,6 @@ const Home = () => {
             <h2 className="div__home__msg__title" style="text-align:center">¡Cuéntanos lo que quieras!</h2>
             <button type="button" className="div__home__msg__btn" style="margin-left:30%">Escribe aquí</button>
           </div>
-
         </div>
         {/* <!-- Fin de div__home --> */}
       </div>

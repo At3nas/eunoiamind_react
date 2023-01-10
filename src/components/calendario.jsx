@@ -10,7 +10,6 @@ const Calendario = () => {
       <div class="div__calendar">
         <br />
         <h1 class="page__title center-element">Calendario</h1>
-
         <div class="div__calendar__container">
           <div class="div__calendar__container__year">
             <h2 class="year__title" id="year"></h2>
@@ -21,7 +20,6 @@ const Calendario = () => {
             <h3 class="month__title" id="month"></h3>
             <img src={require("../assets/arrow-right.png")} class="calendar__arrow" id="calendar-next" />
           </div>
-
           <div class="div__calendar__container__weeks">
             <div class="calendar__week center-element">
               <p class="week-day">Lun</p>
