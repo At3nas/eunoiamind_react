@@ -1,35 +1,35 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const userTemple = [
-    {
-        nombreUsuario: '',
-        correo: '',
-        contraseña: '',
-        contraseña2: ''
-    }
+  {
+    nombreUsuario: '',
+    correo: '',
+    contraseña: '',
+    contraseña2: ''
+  }
 ]
 
 function ModalFormComponent({ createUser }) {
 
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-    const [newUser, setNewUser] = useState(userTemple);
-    const { nombreUsuario, correo, contraseña, contraseña2 } = newUser;
+  const [newUser, setNewUser] = useState(userTemple);
+  const { nombreUsuario, correo, contraseña, contraseña2 } = newUser;
 
-    const handleSubmit = (e) => {
-        e.preventDefault();//Esto es para evitar que la pagina se actualize al presionar el button
-        createUser(newUser);
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();//Esto es para evitar que la pagina se actualize al presionar el button
+    createUser(newUser);
+  }
 
-    const handleInputChange = (e) => {
-        //...autoNuevo-> es una condicional para que el contenido de autoNuevo se mantenga
-        setNewUser({ ...newUser, [e.target.name]: e.target.value })//Aqui el event.target.name toma el name de cada input para añadirle datos
-    }
-
+  const handleInputChange = (e) => {
+    //...autoNuevo-> es una condicional para que el contenido de autoNuevo se mantenga
+    setNewUser({ ...newUser, [e.target.name]: e.target.value })//Aqui el event.target.name toma el name de cada input para añadirle datos
+  }
 
     return (
         <>
@@ -70,5 +70,3 @@ function ModalFormComponent({ createUser }) {
 }
 
 export default ModalFormComponent;
-
-

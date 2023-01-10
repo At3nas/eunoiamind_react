@@ -28,9 +28,7 @@ const Pregunta = () => {
       <div class="_btn">
         <Link to={"/home"}><button type="button" class="btn2">Enviar</button></Link>
       </div>
-    </div>
-
     );
   }
-
+}
 export default Pregunta;
