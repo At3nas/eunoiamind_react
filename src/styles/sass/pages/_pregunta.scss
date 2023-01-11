@@ -3,22 +3,30 @@
 .titulo {
     color: variables.$color3;
     text-align: center;
+    margin-top: 100px;
 }
 
 
 .div__pregunta{
     background-color: variables.$color1;
     width: 100vw;
-    height: 650px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .div__pregunta__emociones {
 position: relative;
-top: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 100px;
+transition: all 0.5s ease-in-out;
 }
 
 .emocion {
-    display: flexbox;
+    display: flex;
     width: 160px;
     margin: 20px 15px 0px 20px;
 
@@ -29,10 +37,11 @@ top: 60px;
 }
 
 ._btn{
-    display: inline;
-    position: absolute;
-    left: 1100px;
-    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
     
 }
 
@@ -50,44 +59,33 @@ top: 60px;
     padding: 7px;
     width: 100px;
     color: variables.$color3;
-    font-size: 17px;
+    font-size: 24px;
     border-radius: 40px;
     box-shadow: 3px 3px 3px #a7e799;
 }
 
-
 .parrafo-pre {
-    position: absolute;
     opacity: 0;
     height: 0px;
     color: variables.$color4;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    font-size: 40px;
+
 }
 
-.parrafo-pre3{
-    left: 60px;
+.contenedor_emocion{
+    display: inline-block;
 }
-.parrafo-pre4{
-    left: 220px;
-}
-.parrafo-pre5{
-    left: 290px;
-}
-.parrafo-pre6{
-    left: 340px;
-}
-
-
-
-.animacion:hover +.parrafo-pre {
+.animacion:hover +.parrafo-pre, .animacion.selected + .parrafo-pre{
     opacity: 1;
     margin-top: 20px;
-    transition: 1.5s;
-    height: 50px;
+    transition: 0.5s;
+    height: 55px;
     overflow: hidden;
     color: variables.$color4;
+    text-align: center;
 }
-
-
 
 .hvr-bounce-in {
     display: inline-block;
@@ -97,11 +95,13 @@ top: 60px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    justify-content: center;
 }
 
 .hvr-bounce-in:hover,
 .hvr-bounce-in:focus,
-.hvr-bounce-in:active {
+.hvr-bounce-in:active,
+.selected {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);

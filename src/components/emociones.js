@@ -13,6 +13,7 @@ const emocionComponent = () => {
     const [emociones, setEmociones] = useState(emocionInit);
     const obtenerEmociones = async () => {
         setEmociones(await getAllEmocion());
+        console.log(emociones);
     }
 useEffect(() => { obtenerEmociones()}, []);
 

@@ -18,7 +18,7 @@ class Slider extends Component {
                 value = currentElement;
                 value += change;
 
-                console.log(sliders.length)
+                
                 if (value === 0 || value === sliders.length + 1) {
                     value = value === 0 ? sliders.length : 1;
                 }
