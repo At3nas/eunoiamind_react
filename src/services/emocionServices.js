@@ -7,5 +7,4 @@ const getAllEmocion = async() => {
     console.log(respuesta.data);
     return respuesta.data;
 }
-
 export {getAllEmocion}
